@@ -27,4 +27,12 @@ $(function () {
             }
         },
     });
+
+
+    // header menu
+    $('.burger').on('click', function () {
+        $('.header__nav').toggleClass('active');
+        $('body').toggleClass('mob-menu');
+        $(this).toggleClass('on');
+    });
 });
