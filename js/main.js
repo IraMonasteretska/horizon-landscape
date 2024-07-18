@@ -1,14 +1,23 @@
 
-$(function () {
+
+$(document).ready(function () {
+
+    // CHANGE HEADER WITH SCROLL ----------- //
+    $(window).on('scroll load', function () {
+        if ($(this).scrollTop() > 60) {
+            $('.header').addClass('change-bg');
+        } else {
+            $('.header').removeClass('change-bg');
+        }
+    });
 
     // main slider
-
     var swiper = new Swiper(".heroscreen__slider", {
         effect: "fade",
         loop: true,
         speed: 1000,
         autoplay: {
-          delay: 1600,
+            delay: 1600,
         },
         keyboard: {
             enabled: true,
@@ -31,8 +40,13 @@ $(function () {
 
     // header menu
     $('.burger').on('click', function () {
-        $('.header__nav').toggleClass('active');
+        $('.header__mobile-menu').toggleClass('active');
         $('body').toggleClass('mob-menu');
         $(this).toggleClass('on');
+    });
+
+    $('.submenu-mobile>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).next('.dropdown').slideToggle();
     });
 });
