@@ -147,6 +147,25 @@
     p{
         margin-bottom: 5px;
     }
+    ul{
+        padding-left: 20px;
+        margin: 10px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        li{
+            list-style: disc;
+            margin-bottom: 5px;
+        }
+    }
+    ol{
+        margin: 10px 0;
+        padding-left: 20px;
+        li{
+            list-style: decimal;
+            margin-bottom: 5px;
+        }
+    }
 }
 
 
