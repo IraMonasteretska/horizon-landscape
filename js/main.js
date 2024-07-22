@@ -49,4 +49,12 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).next('.dropdown').slideToggle();
     });
+
+    // styled selects
+    if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "Project Type*",
+            minimumResultsForSearch: Infinity,
+        });
+    }
 });

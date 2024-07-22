@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Contact us</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -120,7 +121,7 @@
         <main class="main">
 
             <section class="topsect">
-                <img src="img/about-hero.jpg" alt="main image">
+                <img src="img/contact-heroimg.jpg" alt="main image">
                 <div class="container">
                     <div class="topsect__inner">
                         <div class="breadcrumbs">
@@ -131,62 +132,85 @@
                                     </a>
                                 </span>
                                 <span>
-                                    About us
+                                    Contact us
                                 </span>
                             </span>
                         </div>
                         <div class="topsect__descr">
                             <h1>
-                                About US
+                                Contact us
                             </h1>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="infosection">
+            <section class="contactsection">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <p class="title">
-                                Horizon
-                                <span>Landscape</span>
-                            </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="descr">
-                                <p>
-                                    is an industry-leading provider of commercial landscaping services. Headquartered in
-                                    Tampa, Florida and serves customers Nationwide.  
-                                </p>
-                                <p>
-                                    Horizon Landscape offers integrated landscape services designed to enhance and
-                                    strengthen the value of your landscape assets. Our specialized services are designed
-                                    to meet unique service needs and exceed the client’s expectations to create enduring
-                                    beauty and value. 
-                                </p>
-                                <p>
-                                    We take pride in delivering consistently excellent results for clients across the
-                                    Country, throughout the lifecycle of their landscapes. 
-                                </p>
-                                <p>
-                                    <span>Our passion,</span> focus and commitment are centered around delivering unparalleled client
-                                    experiences that enhance the value of every project we encounter. 
-                                </p>
+                    <p class="title">
+                        Your satisfaction is our top priority.<br> Our team is always available to<br> answer your questions.
+                    </p>
+                    <p class="subtitle">
+                        We would be grateful for the opportunity to become your trusted partner.
+                    </p>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Full Name*" required>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Company Name*" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <input type="email" placeholder="Email*" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <input type="number" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Project Address*" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Project Location* (City, State)">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputfield">
+                                    <select name="" id="" class="styledselect" data-placeholder="Project Type*">
+                                        <option></option>
+                                        <option value="1">Type 1</option>
+                                        <option value="2">Type 2</option>
+                                        <option value="3">Type 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="How Can We Help you...">
+                                </div>
+                            </div>
 
-            <div class="picsect">
-                <div class="picleftbox">
-                    <img src="img/abpic1.jpg" alt="img">
+                            
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" value="Submit" class="submitbtn">
+                        </div>
+
+                    </form>
+
                 </div>
-                <div class="picrightbox">
-                    <img src="img/abpic2.png" alt="img">
-                </div>
-            </div>
+            </section>
 
 
         </main>
@@ -263,6 +287,7 @@
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/select2.js"></script>
     <script src="js/main.js"></script>
 
 

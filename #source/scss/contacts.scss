@@ -1,0 +1,206 @@
+.contactsection {
+    padding: 160px 0 150px;
+
+    .title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #394336;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .subtitle {
+        margin-bottom: 0;
+        text-align: center;
+        color: #394336;
+        font-weight: 500;
+        line-height: 170%;
+    }
+
+    form {
+        max-width: 810px;
+        margin: 0 auto;
+
+        .row {
+            margin-left: -25px;
+            margin-right: -25px;
+
+            .col-md-6,
+            .col-12 {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+
+        .inputfield {
+            margin-top: 70px;
+
+            input {
+                width: 100%;
+                height: 42px;
+                font-size: 17px;
+                font-weight: 500;
+                border: none;
+                border-bottom: 1px solid #394336;
+                color: #394336;
+
+                &::placeholder {
+                    color: #394336;
+                }
+            }
+
+            .select2 {
+                width: 100% !important;
+            }
+
+            .select2-container .select2-selection--single {
+                height: 42px;
+                border: none;
+                border-bottom: 1px solid #394336;
+                border-radius: 0;
+            }
+
+            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                line-height: 42px;
+                font-size: 17px;
+                font-weight: 500;
+                color: #394336;
+            }
+
+            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                color: #394336;
+            }
+
+            .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                border-color: #394336 transparent transparent transparent;
+                border-width: 6px 5px 0 5px;
+            }
+
+            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                height: 42px;
+            }
+
+
+        }
+
+        .submitbtn {
+            margin-top: 110px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 58px;
+            border-radius: 40px;
+            border: none;
+            background: #497F00;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 130%;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: #394336;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #497F00;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media(max-width:1550.8px) {
+    .contactsection {
+        padding: 120px 0;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .contactsection {
+        padding: 100px 0;
+    }
+
+    .contactsection .title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .contactsection .title {
+        font-size: 28px;
+    }
+
+    .contactsection form .inputfield {
+        margin-top: 50px;
+    }
+
+    .contactsection form .submitbtn {
+        margin-top: 70px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .contactsection .title br {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+    .contactsection {
+        padding: 70px 0;
+    }
+
+    .contactsection form .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .col-md-6,
+        .col-12 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .contactsection form .inputfield {
+        margin-top: 30px;
+
+        input {
+            font-size: 16px;
+        }
+    }
+
+    .contactsection form .inputfield .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+    }
+
+    .contactsection form .submitbtn {
+        margin-top: 50px;
+        font-size: 16px;
+        height: 48px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .contactsection .title {
+        font-size: 20px;
+    }
+}
