@@ -17,7 +17,7 @@ $(document).ready(function () {
         loop: true,
         speed: 1000,
         autoplay: {
-            delay: 1600,
+            delay: 3000,
         },
         keyboard: {
             enabled: true,
